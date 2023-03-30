@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +35,24 @@
   to {
     transform: rotate(360deg);
   }
+}
+.radio-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.tipacard{
+  display: flex;
+  justify-content: space-around;
+}
+.butoane{
+  display: flex;
+  justify-content: flex-end;
+}
+.colorbackgorund{
+  display: flex;
+  justify-content: flex-end;
+}
+.root{
+  background-color: white;
 }
