@@ -38,29 +38,19 @@
     transform: rotate(360deg);
   }
 }
-.radio-group {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
 .tipacard{
   display: flex;
   justify-content: space-evenly;
 }
 .butoane{
   display: flex;
-  justify-content: flex-start;
+  justify-content: left;
+  padding: 5px;
 }
 .colorbackgorund{
   display: flex;
   justify-content: flex-end;
 }
-.root{
-  background-color: white;
-}
 .alerta{
   margin-right: auto;
-}
-.text{
-  margin-left: auto;
 }

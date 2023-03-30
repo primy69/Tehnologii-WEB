@@ -5,6 +5,7 @@ import UTMCard from "./Card";
 import {useState} from "react";
 import ContainedButtons1 from "./Alert";
 import BasicTextFields from "./Textfield";
+import ComponentCuInputSiButon from "./textfieldsubmit";
 
 function App() {
   const[showCard, setShowCard] = useState(false);
@@ -14,7 +15,7 @@ function App() {
   return (
     <div className="App">
 
-      <div id="root" className="colorbackgorund">
+      <div id="App" className="colorbackgorund">
         <TextButtons/>
       </div>
         <h1>marius herghelegiu</h1>
@@ -29,8 +30,11 @@ function App() {
               {showCard && <UTMCard />}
               {showCard && <UTMCard />}
           </div>
-          <div className="text">
+          <div className="butoane">
                 <BasicTextFields/>
+          </div>
+          <div className="butoane">
+            <ComponentCuInputSiButon/>
           </div>
       </div>
     </div>
