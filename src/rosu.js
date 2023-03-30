@@ -10,11 +10,12 @@ const changeBackgroundColor = (color) => {
 }
 
 export default function TextButtons() {
+
     return (
         <Stack direction="row" spacing={2}>
             <Button onClick={() => changeBackgroundColor("#ffffff")}>Default</Button>
+            <Button onClick={() => changeBackgroundColor("#ffd500")}>Galben</Button>
             <Button onClick={() => changeBackgroundColor("#FF5733")}>Orange</Button>
-            <Button onClick={() => changeBackgroundColor("#F4D03F")}>Yellow</Button>
         </Stack>
     );
 }

@@ -1,5 +1,7 @@
 .App {
+  display: flex;
   text-align: center;
+  flex-direction: column;
 }
 
 .App-logo {
@@ -43,11 +45,11 @@
 }
 .tipacard{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .butoane{
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 .colorbackgorund{
   display: flex;
@@ -55,4 +57,10 @@
 }
 .root{
   background-color: white;
+}
+.alerta{
+  margin-right: auto;
+}
+.text{
+  margin-left: auto;
 }

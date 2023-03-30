@@ -9,18 +9,17 @@ const useStyles = makeStyles((theme) => ({
         },
     },
 }));
-const myfun = () => {
-    console.log("Alert button")
-    alert("Alert button")
-}
-export default function ContainedButtons() {
+export default function ContainedButtons(props) {
     const classes = useStyles();
+    const { onClick } = props;
+    const handleClick = () => {
+        onClick();
+    }
 
     return (
         <div className={classes.root}>
 
-            <Button variant="contained" color="secondary" href="#contained-buttons" onClick={myfun}>
-                Alert button
+            <Button  onClick={handleClick}> Afiseaza
             </Button>
         </div>
     );
