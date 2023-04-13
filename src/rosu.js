@@ -10,21 +10,21 @@ const theme = createTheme({
         },
     },
 });
-const changeBackgroundColor = (color) => {
-    console.log('changeBackgroundColor called with color:', color);
-    const element = document.getElementById("root");
-    element.style.backgroundColor = color;
-}
 
-export default function TextButtons() {
-
+export default function TextButtons(props) {
     return (
         <ThemeProvider theme={theme}>
-        <Stack direction="row" spacing={2}>
-            <Button color="colorbut" onClick={() => changeBackgroundColor("#ffffff")}>Default</Button>
-            <Button color="colorbut" onClick={() => changeBackgroundColor("#ffd500")}>Galben</Button>
-            <Button color="colorbut" onClick={() => changeBackgroundColor("#FF5733")}>Orange</Button>
-        </Stack>
+            <Stack direction="row" spacing={2}>
+                <Button color="colorbut" onClick={() => props.handleColorChange('#ffffff')}>
+                    Default
+                </Button>
+                <Button color="colorbut" onClick={() => props.handleColorChange('#ffd500')}>
+                    Galben
+                </Button>
+                <Button color="colorbut" onClick={() => props.handleColorChange('#FF5733')}>
+                    Orange
+                </Button>
+            </Stack>
         </ThemeProvider>
     );
 }
